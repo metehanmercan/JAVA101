@@ -14,7 +14,7 @@ public class DaireAlanCevre {
 
         alan=(pi*r*r*aci)/360;
 
-        System.out.println("alan:" + alan);
+        System.out.println("alan:"+alan);
 
 
     }
