@@ -1,5 +1,6 @@
 package org.example;
 
+import javax.swing.*;
 import java.util.Scanner;
 public class KullaniciGirisi{
     public static void main(String[] args) {
@@ -9,6 +10,7 @@ public class KullaniciGirisi{
         int select;
 
         Scanner input=new Scanner(System.in);
+        Scanner input1=new Scanner(System.in);
 
 
         System.out.println("kullnıcı adınız:");
@@ -24,7 +26,7 @@ public class KullaniciGirisi{
             System.out.println("şifrenizi sıfırlamak ister misiniz?  1-evet 2-hayır"  );
             select=input.nextInt();
               if(select==1){
-                  Scanner input1=new Scanner(System.in);
+
                 System.out.println("yeni şifrenizi giriniz:");
                   newpassword=input1.nextLine();
 
@@ -32,7 +34,18 @@ public class KullaniciGirisi{
 
                       System.out.println("yeni şifreniz eski şifre  olamaz");
                   }else{
-                      System.out.println("yeni şifreniz oluşturuldu");
+                      System.out.println("şifreniz oluşturuldu");
+                      if (newpassword.equals("mete123")){
+                          System.out.println("hesaba giriş yapıldı");
+
+                      }else {
+                          System.out.println("yeni şifreyle tekrar giriniz");
+                          newpassword=input1.nextLine();
+
+                          if(newpassword.equals(newpassword)){
+                          System.out.println("kontrollü giriş yapıldı");
+                  }
+                      }
                   }
               } else{
                 System.out.println("anasayfaya dönünüz.");
