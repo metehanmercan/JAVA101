@@ -1,21 +1,42 @@
 package org.example;
 
 import java.util.Scanner;
-public class KullaniciGirisi {
+public class KullaniciGirisi{
     public static void main(String[] args) {
-        String userName,password;
+
+
+        String username,password,newpassword;
+        int select;
 
         Scanner input=new Scanner(System.in);
 
-        System.out.println("kullacı adınızı giriniz:");
-        userName= input.nextLine();
-        System.out.println("şifrenizi giriniz:");
-        password= input.nextLine();
 
-        if (userName.equals("java") && password.equals("java101")){
-        System.out.println("giriş yaptınız");
-    }else{
-            System.out.println("bilgileriniz hatalıdır!!!");
+        System.out.println("kullnıcı adınız:");
+        username=input.nextLine();
+        System.out.println("şifreniz:");
+        password=input.nextLine();
+
+
+        if(username.equals("java") && password.equals("java123")){
+            System.out.println("giriş yaptınız");
+        } else {
+            System.out.println("yanlış giriş yaptınız");
+            System.out.println("şifrenizi sıfırlamak ister misiniz?  1-evet 2-hayır"  );
+            select=input.nextInt();
+              if(select==1){
+                System.out.println("yeni şifrenizi giriniz:");
+                newpassword=input.nextLine();
+
+                  if (newpassword.equals("password")){
+
+                      System.out.println("yeni şifreniz eski şifre  olamaz");
+                  }else{
+                      System.out.println("yeni şifreniz oluşturuldu");
+                  }
+              } else{
+                System.out.println("anasayfaya dönünüz.");
+            }
+
+    }
         }
-        }
-}
+    }
