@@ -24,8 +24,9 @@ public class KullaniciGirisi{
             System.out.println("şifrenizi sıfırlamak ister misiniz?  1-evet 2-hayır"  );
             select=input.nextInt();
               if(select==1){
+                  Scanner input1=new Scanner(System.in);
                 System.out.println("yeni şifrenizi giriniz:");
-                newpassword=input.nextLine();
+                  newpassword=input1.nextLine();
 
                   if (newpassword.equals("password")){
 
