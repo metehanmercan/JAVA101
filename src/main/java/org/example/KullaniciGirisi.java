@@ -28,7 +28,7 @@ public class KullaniciGirisi{
                 System.out.println("yeni şifrenizi giriniz:");
                   newpassword=input1.nextLine();
 
-                  if (newpassword.equals("password")){
+                  if (newpassword.equals("java123")){
 
                       System.out.println("yeni şifreniz eski şifre  olamaz");
                   }else{
