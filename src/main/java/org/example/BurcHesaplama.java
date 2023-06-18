@@ -72,7 +72,7 @@ Scanner input=new Scanner(System.in);
                 System.out.println("burcunuz: oğlak");
             }
         } else if (month==1) {
-            if(day<=22){
+            if(day<22){
                 System.out.println("burcunuz:oğlak");
             }else {
                 System.out.println("burcunuz: kova");
