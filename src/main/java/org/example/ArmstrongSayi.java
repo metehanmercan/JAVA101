@@ -12,7 +12,7 @@ public class ArmstrongSayi {
         int basSayisi=0;
         int tempsayi=sayi;
         int basamakDegeri;
-        int us=1;
+        int us;
         int result=0;
 
         while (tempsayi!=0){
@@ -22,7 +22,7 @@ public class ArmstrongSayi {
         tempsayi=sayi;
        while (tempsayi!=0){
           basamakDegeri=tempsayi%10;
-          us=1;
+           us=1;
            for (int i=1;i<=basSayisi;i++){
                us*=basamakDegeri;
 
