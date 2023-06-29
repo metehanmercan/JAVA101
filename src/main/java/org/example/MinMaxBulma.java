@@ -19,7 +19,7 @@ public class MinMaxBulma {
                 minDeger = sayi;
             }
 
-            if (sayi > maxDeger) {
+             else if (sayi > maxDeger) {
                 maxDeger = sayi;
             }
         }
