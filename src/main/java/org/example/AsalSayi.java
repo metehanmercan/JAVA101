@@ -9,17 +9,16 @@ public class AsalSayi {
         System.out.print("Sayı Giriniz : ");
         int n = input.nextInt();
 
-        for (int i = 2; i <= n; i++) {
-            boolean isPrime=true;
-            for (int m = 2; m <= i - 1; m++) {
-                if(i%m==0){
-                    isPrime=false;
-                    break;
-                }
-            }
-            if(isPrime){
-                System.out.println(i);
-            }
-        }
+       for(int i=2;i<=n;i++){
+           int total=0;
+           for(int k=1;k<=i;k++){
+               if(i%k==0){
+                   total++;
+               }
+           }
+           if(total<=2){
+               System.out.println(i);
+           }
+       }
     }
 }
