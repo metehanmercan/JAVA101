@@ -12,7 +12,6 @@ public class Faktoriyel {
 
         for (i=1;i<=n;i++){
             toplam= toplam*i;
-
         }
         System.out.println(toplam);
     }
