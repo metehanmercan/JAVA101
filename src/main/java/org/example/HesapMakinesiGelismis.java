@@ -12,8 +12,12 @@ public class HesapMakinesiGelismis {
     static int times(int a,int b){
         return a*b;
     }
-    static int divided(int a,int b){
-        return a/b;
+    static void divided(int a,int b){
+        if(b==0){
+            System.out.print("ikinci sayı 0 olamaz");
+
+        }
+        System.out.println("sonuç:"+ a/b);
     }
     static int power(int a,int b){
         int result=1;
@@ -32,9 +36,10 @@ public class HesapMakinesiGelismis {
     static int mod(int a,int b){
         return a%b;
     }
-    static int dikdotgen(int kisa,int uzun){
+    static void dikdortgen(int kisa,int uzun){
+        System.out.println("çevre:"+ 2*(kisa+uzun));
+        System.out.println("alan:"+ kisa*uzun);
 
-        return kisa*uzun;
     }
 
 
@@ -83,7 +88,7 @@ public class HesapMakinesiGelismis {
              a= input.nextInt();
              System.out.print("ikinci sayı:");
              b=input.nextInt();
-             System.out.println("sonuç:"+divided(a,b));
+             divided(a,b);
 
          } else if (select==5) {
              System.out.print("birinci sayı:");
@@ -109,7 +114,7 @@ public class HesapMakinesiGelismis {
              a= input.nextInt();
              System.out.print("uzun kenar:");
              b=input.nextInt();
-             System.out.println(dikdotgen(a,b));
+             dikdortgen(a,b);
          } else if (select==0) {
              System.out.println("güle güle:D");
          }
