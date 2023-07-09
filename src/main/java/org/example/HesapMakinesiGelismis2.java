@@ -41,23 +41,26 @@ public class HesapMakinesiGelismis2 {
 
     static void times() {
         Scanner scan = new Scanner(System.in);
-        int number, result = 1, i = 1;
+        int counter , result = 1, i=1 ,sayi;
+        System.out.print("kaç değer gireceksiniz?:");
+        counter= scan.nextInt();
+        if (counter==0){
+            System.out.println("değer girilmedi");
 
-        while (true) {
-            System.out.print(i++ + ". sayı :");
-            number = scan.nextInt();
+        }else {
 
-            if (number == 1)
-                break;
+        while (i<=counter){
+            System.out.print(i + ". sayı :");
+            sayi = scan.nextInt();
 
-            if (number == 0) {
-                result = 0;
-                break;
-            }
-            result *= number;
-        }
+
+       result*=sayi;
+          i++;
+
+         }
 
         System.out.println("Sonuç : " + result);
+        }
     }
 
     static void divided() {
@@ -186,4 +189,5 @@ public class HesapMakinesiGelismis2 {
         System.out.println("güle güle :D");
     }
 }
+
 
