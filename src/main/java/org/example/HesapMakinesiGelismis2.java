@@ -24,18 +24,21 @@ public class HesapMakinesiGelismis2 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Kaç adet sayı gireceksiniz :");
         int counter = scan.nextInt();
-        int number, result =0;
+        int number , result =0;
+
 
         for (int i = 1; i <= counter; i++) {
             System.out.print(i + ". sayı :");
             number = scan.nextInt();
             if (i == 1) {
                 result += number;
-                continue;
-            }
-            result -= number;
-        }
+                break;
 
+            }
+            result-=number;
+
+
+        }
         System.out.println("Sonuç : " + result);
     }
 
@@ -74,16 +77,20 @@ public class HesapMakinesiGelismis2 {
             number = scan.nextDouble();
             if (i != 1 && number == 0) {
                 System.out.println("Böleni 0 giremezsiniz.");
-                continue;
+                break;
             }
             if (i == 1) {
                 result = number;
+               if(counter==1){
+                   System.out.println("sonuç:"+result);
+               }
                 continue;
             }
             result /= number;
+            System.out.println("Sonuç : " + result);
         }
 
-        System.out.println("Sonuç : " + result);
+
     }
 
     static void power() {
