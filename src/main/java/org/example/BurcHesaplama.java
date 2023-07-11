@@ -33,11 +33,10 @@ Scanner input=new Scanner(System.in);
             if(day<23){
                 System.out.println("burcunuz: ikizler");
             }else {
-                System.out.println("burcunuz:yengeç");
-            }
-        } else if (month==7) {
+                System.out.println("burcunuz:yengeç:");
+        } if (month==7) {
             if(day<23){
-                System.out.println("burcunuz: yengeç");
+                System.out.println("burcunuz: yengeç.");
             }else{
                 System.out.println("burcunuz: aslan");
             }
@@ -85,4 +84,5 @@ Scanner input=new Scanner(System.in);
             }
         }
     }
+}
 }
