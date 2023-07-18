@@ -11,26 +11,26 @@ public class Employee {
       this.workHours=workHours;
       this.hireYear=hireYear;
     }
-    void tax(){
-        double vergi;
+    double tax(){
+
         if(this.salary>1000){
-          vergi=(this.salary * 3) / 100;
-            System.out.println("vergi: "+vergi);
+         return (this.salary * 3) / 100;
+
         }else {
-            vergi=0.0;
-            System.out.println("vergi: "+vergi);
+
+            return 0;
         }
 
     }
-    void bonus(){
-        int bonuss;
+     double bonus(){
+
         if(this.workHours>40){
-           bonuss=(this.workHours-40)*30;
-           System.out.println("bonus artışı: "+bonuss);
+
+           return (this.workHours-40)*30;
 
         }else {
-            bonuss=0;
-            System.out.println("bonus artışı: "+bonuss);
+
+            return 0;
         }
 
     }
@@ -47,7 +47,7 @@ public class Employee {
             System.out.println("maaş artışı: "+raiseSalaryy);
         }
     }
-    void  toStringg(){
+    void printEmployee(){
         System.out.println("adı: "+this.name);
         System.out.println("maaşı: "+this.salary);
         System.out.println("çalışma saati: "+this.workHours);
@@ -55,7 +55,7 @@ public class Employee {
          tax();
          bonus();
          raiseSalary();
-        System.out.println("vergi ve bonuslar ile maaş: "+);
+        System.out.println("vergi ve bonuslar ile maaş: ");
 
     }
 }
