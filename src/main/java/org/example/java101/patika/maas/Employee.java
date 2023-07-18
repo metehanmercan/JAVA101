@@ -34,28 +34,30 @@ public class Employee {
         }
 
     }
-    void raiseSalary(){
-        double raiseSalaryy;
+    double raiseSalary(){
+
         if(2021-this.hireYear<10){
-            raiseSalaryy=(this.salary*5)/100;
-            System.out.println("maaş artışı: "+raiseSalaryy);
+            return (this.salary*5)/100;
+
         }else if (2021-this.hireYear>=10 && 2021-this.hireYear<20){
-            raiseSalaryy=(this.salary*10)/100;
-            System.out.println("maaş artışı: "+raiseSalaryy);
+           return (this.salary*10)/100;
+
         } else if (2021-this.hireYear>=20) {
-            raiseSalaryy=(this.salary*15)/100;
-            System.out.println("maaş artışı: "+raiseSalaryy);
+           return (this.salary*15)/100;
+
         }
+        return 0;
     }
     void printEmployee(){
         System.out.println("adı: "+this.name);
         System.out.println("maaşı: "+this.salary);
         System.out.println("çalışma saati: "+this.workHours);
         System.out.println("başlangıç yılı: "+this.hireYear);
-         tax();
-         bonus();
-         raiseSalary();
-        System.out.println("vergi ve bonuslar ile maaş: ");
+        System.out.println("vergi: "+tax());
+        System.out.println("bonus: "+bonus());;
+        System.out.println("maaş artışı: "+raiseSalary());
+        System.out.println("vergi ve bonuslar ve maaş artışı ile maaş: "+(this.salary+bonus()-tax()+raiseSalary()));
+
 
     }
 }
