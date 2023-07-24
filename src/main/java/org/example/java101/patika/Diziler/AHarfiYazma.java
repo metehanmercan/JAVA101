@@ -8,7 +8,11 @@ public class AHarfiYazma {
                   if(i==0 || i==2){
                       list[i][j]=" * ";
                   } else if (j==0 || j==3) {
+                      if( (j==3 && i==3) || (j==3 && i==4) || (j==3 && i==5)){
+                        list[i][j]="   ";
+                      }else {
                       list[i][j]=" * ";
+                      }
                   }else {
                       list[i][j]="   ";
                   }
