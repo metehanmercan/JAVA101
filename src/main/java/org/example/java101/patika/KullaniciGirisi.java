@@ -17,8 +17,7 @@ public class KullaniciGirisi{
         System.out.println("şifreniz:");
         password=input.nextLine();
 
-
-        if(username.equals("java") && password.equals("java123")){
+        if(username.equals("ismail")&&password.equals("teğmen")){
             System.out.println("giriş yaptınız");
         } else {
             System.out.println("yanlış giriş yaptınız");
@@ -30,7 +29,7 @@ public class KullaniciGirisi{
                 System.out.println("yeni şifrenizi giriniz:");
                   newpassword=input.nextLine();
 
-                  if (newpassword.equals("java123")){
+                  if (newpassword.equals("teğmen")){
 
                       System.out.println("yeni şifreniz eski şifre  olamaz");
                   }else{

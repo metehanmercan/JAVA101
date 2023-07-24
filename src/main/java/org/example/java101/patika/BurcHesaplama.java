@@ -13,7 +13,7 @@ Scanner input=new Scanner(System.in);
 
         if((month==3)){
             if(day>20){
-                System.out.println("burcunuz: KOÇ");
+                System.out.println("burcunuz: KOÇ en iyi burca sahipsiniz");
             }else{
                 System.out.println("burcunuz: balık");
             }
