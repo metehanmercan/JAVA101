@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FrekansBulma {
+
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("elaman sayısı?: ");
@@ -22,16 +24,16 @@ public class FrekansBulma {
 
         for (int j = 0; j < list.length; j++) {
             int plus = 1;
-            for (int k = j + 1; k < list.length; k++) {
+            for (int k = j+1; k < list.length; k++) {
+
                 if (list[j] == list[k]) {
                     plus++;
-                } else {
-                    plus =1;
                 }
+            }
+            if(plus>1){
+                System.out.println(list[j] + " sayısının frekansı: " + plus);
 
             }
-            System.out.println(list[j] + " sayısının frekansı: " + plus);
-
         }
     }
 }
