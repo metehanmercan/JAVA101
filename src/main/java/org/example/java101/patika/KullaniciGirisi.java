@@ -12,12 +12,12 @@ public class KullaniciGirisi{
         Scanner input=new Scanner(System.in);
 
 
-        System.out.println("kullnıcı adınız:");
+        System.out.println("kullanıcı adınız:");
         username=input.nextLine();
         System.out.println("şifreniz:");
         password=input.nextLine();
 
-        if(username.equals("ismail")&&password.equals("teğmen")){
+        if(username.equals("yaren")&&password.equals("yaren051017")){
             System.out.println("giriş yaptınız");
         } else {
             System.out.println("yanlış giriş yaptınız");
@@ -29,7 +29,7 @@ public class KullaniciGirisi{
                 System.out.println("yeni şifrenizi giriniz:");
                   newpassword=input.nextLine();
 
-                  if (newpassword.equals("teğmen")){
+                  if (newpassword.equals("yaren051017")){
 
                       System.out.println("yeni şifreniz eski şifre  olamaz");
                   }else{

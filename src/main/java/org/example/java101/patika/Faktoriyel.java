@@ -14,5 +14,6 @@ public class Faktoriyel {
             toplam= toplam*i;
         }
         System.out.println(toplam);
+
     }
 }
